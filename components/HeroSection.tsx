@@ -37,9 +37,9 @@ export default function HeroSection() {
             fontSize={{ base: 'sm', sm: 'lg', md: '2xl' }} 
             color={useColorModeValue('gray.600', 'gray.400')}>
               <Highlight 
-              query={['We are looking for a company to support us']} 
+              query={['We Are Looking for Companies to Support Us']} 
               styles={{ px: '2', py: '1', rounded: 'full', bg: 'purple.300' }}>
-              We Are Free Agent VALORANT Team Competing in #ChallengersJP. We are looking for a company to support us.
+              We Are Free Agent VALORANT Team Competing in #ChallengersJP. We Are Looking for Companies to Support Us.
               </Highlight>
           </Text>
           <Center maxW='6xl'>
