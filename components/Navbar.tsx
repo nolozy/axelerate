@@ -18,6 +18,8 @@ import {
   Center,
 } from '@chakra-ui/react'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
+import Image from "next/image"
+import localImage from "../public/logo.png";
 
 interface Props {
   children: React.ReactNode
@@ -47,9 +49,9 @@ export default function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <>
-      <Box bg={useColorModeValue('white', 'pueple.900')} px={4}>
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box></Box>
+        <Image height="32" width="32" src={localImage} alt="logo"></Image>
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>

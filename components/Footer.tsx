@@ -12,6 +12,8 @@ import {
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { FaXTwitter } from "react-icons/fa6"
 import { ReactNode } from 'react'
+import Image from "next/image"
+import localImage from "../public/logo.png";
 
 const SocialButton = ({
   children,
@@ -44,7 +46,7 @@ const SocialButton = ({
   )
 }
 
-export default function SmallWithSocial() {
+export default function SmallWithLogoLeft() {
   return (
     <Box
       bg={useColorModeValue('gray.50', 'gray.900')}
@@ -57,9 +59,10 @@ export default function SmallWithSocial() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text>© 2024 - @nolozy</Text>
+        <Image height="32" width="32" src={localImage} alt="logo"></Image>
+        <Text>© 2024 AXELERATE</Text>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'https://twitter.com/nolozy'}>
+          <SocialButton label={'Twitter'} href={'https://twitter.com/xui_vl'}>
             <FaXTwitter />
           </SocialButton>
         </Stack>

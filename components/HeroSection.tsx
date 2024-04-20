@@ -14,6 +14,8 @@ import {
   useColorModeValue,
   createIcon,
 } from '@chakra-ui/react'
+import Image from "next/image"
+import localImage from "../public/big.jpeg";
 
 export default function HeroSection() {
   return (
@@ -52,6 +54,14 @@ export default function HeroSection() {
               allowFullScreen>
             </iframe>
           </Center>
+          <Center maxW='6xl'>
+          <Image
+            src={localImage}
+            height={400}
+            width={400}
+            alt="logo"
+          />
+          </Center>
           <Stack spacing={2}>
             <Heading fontSize={{ base: 'xl', sm: '3xl', md: '5xl' }}>
               Roster
@@ -81,34 +91,21 @@ export default function HeroSection() {
                 una
               </Link>
             </Heading>
-            <Heading  mt={6} fontSize={{ base: 'md', sm: 'xl', md: '3xl' }}>
-              <Link href='https://twitter.com/iruirukamoooo' isExternal>
-                Iru (sub)
-              </Link>
-            </Heading>
             <Heading fontSize={{ base: 'md', sm: 'xl', md: '3xl' }}>
               <Link href='https://twitter.com/TOMY_valo' isExternal>
                 TÖMY (sub)
               </Link>
             </Heading>
-            <Heading mt={6} fontSize={{ base: 'md', sm: 'xl', md: '3xl' }}>
-            <Link href='https://twitter.com/nolozy' isExternal>
-              nolozy(coach / manager)
-            </Link>
-          </Heading>
           </Stack>
           <Heading 
           fontSize={{ base: 'xl', sm: '3xl', md: '5xl' }}
           color={useColorModeValue('blackalpha.700', 'blackalpha.300')}>
-            <Highlight query={['contact@nolozy.com', 'nolozy']} styles={{color: '#6B46C1' }}>
-              Contact: contact@nolozy.com 
+            <Highlight query={['xui1455', 'kurolia']} styles={{color: '#6B46C1' }}>
+              Contact on
             </Highlight>
             <br />
-            or
-            <br />
-            <Highlight query={['nolozy']} styles={{color: '#6B46C1' }}>
-              
-              Discord: nolozy
+            <Highlight query={['xui1455', 'kurolia']} styles={{color: '#6B46C1' }}>
+              Discord: xui1455 or kurolia
             </Highlight>
           </Heading>
         </Stack>
